@@ -35,6 +35,10 @@ if(ANDROID)
 else()
     add_executable(QML_TOOLs
       main.cpp
+      cpp/Qt/json/jsondocument.h
+      cpp/Qt/json/jsondocument.cpp
+      cpp/Qt/json/jsondocumentimp.h
+      cpp/Qt/json/jsondocumentimp.cpp
       qml.qrc
     )
 endif()

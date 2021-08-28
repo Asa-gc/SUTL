@@ -42,7 +42,7 @@ Item{
             font{family: idItemRoot.fontFamily;pointSize: idItemRoot.height/2-1;}
             onEditingFinished:{
                 if(idItemRoot.lastValue!==idTteValue.text){
-                    console.log(idTteValue.text)
+                    console.log("EditingFinished Text:",idTteValue.text)
                     sigEditingFinshed(text);
                 }
             }
