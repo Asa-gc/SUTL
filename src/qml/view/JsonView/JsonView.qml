@@ -5,10 +5,10 @@ import "../../func/MyJson/MyJson.js"as MyJson
 
 Rectangle {
     id:idRecRoot;
-    border.color: "#000000"
+    //border.color: "#000000"
     property Component jsonNodeComponent:null;
     property int pointSize:10
-    property string curJsonStr: value
+    property string curJsonStr;
 
     signal jsonChange();
 
@@ -27,6 +27,9 @@ Rectangle {
             }
             return ;
         }
+    }
+    function getJsonStr(){
+        return JSON.stringify(idRecRoot.getJsonObj());
     }
 
     function setJsonStr(_jsonStr){
@@ -49,8 +52,6 @@ Rectangle {
             idRecJsonView.rootNode.destroyTheNode();
         }
         idRecJsonView.rootNode=idRecRoot.createObjectNode(idRecJsonView,"",jsonObj);
-
-
       }
 
     function createItem(_parentItem){

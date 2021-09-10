@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SUTL",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CPP_TOOLs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CPP_TOOLs-Debug-e75182a08be313e64d8d.json",
+					"name" : "CPP_TOOLs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CPP_TOOLs_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CPP_TOOLs_autogen-Debug-b93e71eb887eaf0b4d20.json",
+					"name" : "CPP_TOOLs_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QML_TOOLs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QML_TOOLs-Debug-7c68488b3ffd54c9db75.json",
+					"name" : "QML_TOOLs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QML_TOOLs_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QML_TOOLs_autogen-Debug-358fce4fc58a24027353.json",
+					"name" : "QML_TOOLs_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug",
+		"source" : "E:/project/myPrj/SUTL/src"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

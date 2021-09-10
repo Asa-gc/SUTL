@@ -4,14 +4,14 @@ import QtQuick.Layouts 1.12
 import QtQuick.Controls.Styles 1.4
 Rectangle {
     id:idRecRoot;
-    property string text:"fffbbbb:";
-    property int currentIndex:0;
+    property string text:"name:";
+    property alias currentIndex:idComboBox.currentIndex;
     property int pointSize: 12;
+    property alias textRole:idComboBox.textRole
     width: 200
-    height: 20
+    height: 25
     clip: true;
-    property ListModel model: ListModel {
-    }
+    property ListModel model
     function append(dict){
         idRecRoot.model.append(dict)
     }
@@ -50,6 +50,9 @@ Rectangle {
         }
         idComboBox.textRole=_textRole
     }
+    function getIndexByKey(_key){
+        return idComboBox.find(_key);
+    }
 
     function addModelByJson(_json){//TODO 暂为单层解析,尝试修改为多层解析
         let key_list=Object.keys(_json);
@@ -64,7 +67,6 @@ Rectangle {
             idRecRoot.append({"key":key_list[i],"value":value_list[i]});
         }
     }
-
 
     Row {
         id: rowLayout2
@@ -86,7 +88,7 @@ Rectangle {
         ComboBox {
             id: idComboBox;
             font.pointSize: idRecRoot.pointSize
-            currentIndex: idRecRoot.currentIndex;
+            currentIndex: 0;
             //Layout.maximumHeight: 20
             Layout.fillWidth: false
             textRole: "key"
@@ -101,9 +103,6 @@ Rectangle {
                    anchors.fill: parent
                    anchors.rightMargin: 3;
                }
-            onCurrentIndexChanged: {
-                idRecRoot.currentIndex=currentIndex;
-            }
         }
         onWidthChanged: {
             rowLayout2.width=idRecRoot.width;

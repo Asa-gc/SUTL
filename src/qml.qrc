@@ -3,10 +3,11 @@
         <file>main.qml</file>
         <file>qml/func/MyJson/MyJson.js</file>
         <file>qml/view/common/ComboWithName.qml</file>
-        <file>qml/view/common/TextInputWithName.qml</file>
+        <file>qml/view/common/TextwithName.qml</file>
         <file>qml/view/JsonView/JsonNode.qml</file>
         <file>qml/view/JsonView/JsonView.qml</file>
         <file>qml/view/common/TextInputWithBorder.qml</file>
         <file>qml/view/JsonView/JsonViewTest.qml</file>
+        <file>qml/view/JsonView/JsonNodeEditerView.qml</file>
     </qresource>
 </RCC>

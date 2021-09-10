@@ -17,7 +17,7 @@ Rectangle {
     property int pointSize:15
     property bool unfoldFlag:true
     property int type:0    //0 string 1number 2 bool 3object 4array
-    property int nodeWidth:20;
+    property int nodeWidth:20;//it`s a width weighting coefficient
     objectName: "JsonNode"//mark type
 
     signal sigValueChange();
@@ -153,6 +153,10 @@ Rectangle {
         }
         idCLt.visible=_visable
     }
+
+   /* JsonNodeEditerView{
+        visible: false;
+    }*/
 
     Text {
         id: idTextKey;
