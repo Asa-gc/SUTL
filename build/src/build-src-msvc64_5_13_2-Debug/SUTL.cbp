@@ -17,6 +17,90 @@
 					<DistClean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="CPP_TOOLs_JSON">
+				<Option output="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_JSON.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DQT_QML_DEBUG"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_QUICK_LIB"/>
+					<Add option="-DQT_QML_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add directory="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug"/>
+					<Add directory="E:/project/myPrj/SUTL/src"/>
+					<Add directory="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_JSON_autogen/include"/>
+					<Add directory="E:/project/myPrj/SUTL/src/3rd/Log/log4cplus/include"/>
+					<Add directory="E:/project/myPrj/SUTL/src/3rd/Log/glog/include"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include/QtCore"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/./mkspecs/win32-msvc"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include/QtQuick"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include/QtQml"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include/QtNetwork"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include/QtGui"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include/QtANGLE"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v CPP_TOOLs_JSON"/>
+					<CompileFile command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
+					<DistClean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CPP_TOOLs_JSON/fast">
+				<Option output="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_JSON.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DQT_QML_DEBUG"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_QUICK_LIB"/>
+					<Add option="-DQT_QML_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add directory="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug"/>
+					<Add directory="E:/project/myPrj/SUTL/src"/>
+					<Add directory="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_JSON_autogen/include"/>
+					<Add directory="E:/project/myPrj/SUTL/src/3rd/Log/log4cplus/include"/>
+					<Add directory="E:/project/myPrj/SUTL/src/3rd/Log/glog/include"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include/QtCore"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/./mkspecs/win32-msvc"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include/QtQuick"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include/QtQml"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include/QtNetwork"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include/QtGui"/>
+					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include/QtANGLE"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v CPP_TOOLs_JSON/fast"/>
+					<CompileFile command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
+					<DistClean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="QML_TOOLs">
 				<Option output="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/QML_TOOLs.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug"/>
@@ -101,8 +185,8 @@
 					<DistClean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="CPP_TOOLs">
-				<Option output="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="CPP_TOOLs_LOG">
+				<Option output="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_LOG.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -116,7 +200,7 @@
 					<Add option="-DQT_GUI_LIB"/>
 					<Add directory="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug"/>
 					<Add directory="E:/project/myPrj/SUTL/src"/>
-					<Add directory="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_autogen/include"/>
+					<Add directory="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_LOG_autogen/include"/>
 					<Add directory="E:/project/myPrj/SUTL/src/3rd/Log/log4cplus/include"/>
 					<Add directory="E:/project/myPrj/SUTL/src/3rd/Log/glog/include"/>
 					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include"/>
@@ -137,14 +221,14 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v CPP_TOOLs"/>
+					<Build command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v CPP_TOOLs_LOG"/>
 					<CompileFile command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
 					<DistClean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="CPP_TOOLs/fast">
-				<Option output="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="CPP_TOOLs_LOG/fast">
+				<Option output="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_LOG.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -158,7 +242,7 @@
 					<Add option="-DQT_GUI_LIB"/>
 					<Add directory="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug"/>
 					<Add directory="E:/project/myPrj/SUTL/src"/>
-					<Add directory="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_autogen/include"/>
+					<Add directory="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_LOG_autogen/include"/>
 					<Add directory="E:/project/myPrj/SUTL/src/3rd/Log/log4cplus/include"/>
 					<Add directory="E:/project/myPrj/SUTL/src/3rd/Log/glog/include"/>
 					<Add directory="E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/include"/>
@@ -179,7 +263,7 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v CPP_TOOLs/fast"/>
+					<Build command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v CPP_TOOLs_LOG/fast"/>
 					<CompileFile command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
 					<DistClean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
@@ -205,6 +289,16 @@
 					<DistClean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="CPP_TOOLs_JSON_autogen">
+				<Option working_dir="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v CPP_TOOLs_JSON_autogen"/>
+					<CompileFile command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
+					<DistClean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="QML_TOOLs_autogen">
 				<Option working_dir="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug"/>
 				<Option type="4"/>
@@ -215,25 +309,34 @@
 					<DistClean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="CPP_TOOLs_autogen">
+			<Target title="CPP_TOOLs_LOG_autogen">
 				<Option working_dir="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v CPP_TOOLs_autogen"/>
+					<Build command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v CPP_TOOLs_LOG_autogen"/>
 					<CompileFile command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
 					<DistClean command="C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_autogen/EWIEGA46WW/qrc_qml.cpp">
-			<Option target="CPP_TOOLs"/>
+		<Unit filename="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_JSON_autogen/EWIEGA46WW/qrc_qml.cpp">
+			<Option target="CPP_TOOLs_JSON"/>
 		</Unit>
-		<Unit filename="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_autogen/EWIEGA46WW/qrc_qml.cpp.rule">
-			<Option target="CPP_TOOLs"/>
+		<Unit filename="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_JSON_autogen/EWIEGA46WW/qrc_qml.cpp.rule">
+			<Option target="CPP_TOOLs_JSON"/>
 		</Unit>
-		<Unit filename="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_autogen/mocs_compilation.cpp">
-			<Option target="CPP_TOOLs"/>
+		<Unit filename="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_JSON_autogen/mocs_compilation.cpp">
+			<Option target="CPP_TOOLs_JSON"/>
+		</Unit>
+		<Unit filename="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_LOG_autogen/EWIEGA46WW/qrc_qml.cpp">
+			<Option target="CPP_TOOLs_LOG"/>
+		</Unit>
+		<Unit filename="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_LOG_autogen/EWIEGA46WW/qrc_qml.cpp.rule">
+			<Option target="CPP_TOOLs_LOG"/>
+		</Unit>
+		<Unit filename="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_LOG_autogen/mocs_compilation.cpp">
+			<Option target="CPP_TOOLs_LOG"/>
 		</Unit>
 		<Unit filename="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/QML_TOOLs_autogen/EWIEGA46WW/qrc_qml.cpp">
 			<Option target="QML_TOOLs"/>
@@ -244,45 +347,52 @@
 		<Unit filename="E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/QML_TOOLs_autogen/mocs_compilation.cpp">
 			<Option target="QML_TOOLs"/>
 		</Unit>
+		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Json/jsondocument.cpp">
+			<Option target="CPP_TOOLs_JSON"/>
+		</Unit>
+		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Json/jsondocument.h">
+			<Option target="CPP_TOOLs_JSON"/>
+		</Unit>
+		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Json/jsondocumentImp.h">
+			<Option target="CPP_TOOLs_JSON"/>
+		</Unit>
+		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Json/main.cpp">
+			<Option target="CPP_TOOLs_JSON"/>
+		</Unit>
+		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Json/nlohmann/json.hpp">
+			<Option target="CPP_TOOLs_JSON"/>
+		</Unit>
+		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Json/nlohmann/jsondocumentImp.cpp">
+			<Option target="CPP_TOOLs_JSON"/>
+		</Unit>
 		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Log/log_if.cpp">
-			<Option target="CPP_TOOLs"/>
+			<Option target="CPP_TOOLs_LOG"/>
 		</Unit>
 		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Log/log_if.h">
-			<Option target="CPP_TOOLs"/>
+			<Option target="CPP_TOOLs_LOG"/>
 		</Unit>
 		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Log/log_imp_glog.cpp">
-			<Option target="CPP_TOOLs"/>
+			<Option target="CPP_TOOLs_LOG"/>
 		</Unit>
 		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Log/log_imp_glog.h">
-			<Option target="CPP_TOOLs"/>
+			<Option target="CPP_TOOLs_LOG"/>
 		</Unit>
 		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Log/log_imp_log4cplus.cpp">
-			<Option target="CPP_TOOLs"/>
+			<Option target="CPP_TOOLs_LOG"/>
 		</Unit>
 		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Log/log_imp_log4cplus.h">
-			<Option target="CPP_TOOLs"/>
-		</Unit>
-		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Qt/json/jsondocument.cpp">
-			<Option target="CPP_TOOLs"/>
-		</Unit>
-		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Qt/json/jsondocument.h">
-			<Option target="CPP_TOOLs"/>
-		</Unit>
-		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Qt/json/jsondocumentimp.cpp">
-			<Option target="CPP_TOOLs"/>
-		</Unit>
-		<Unit filename="E:/project/myPrj/SUTL/src/cpp/Qt/json/jsondocumentimp.h">
-			<Option target="CPP_TOOLs"/>
+			<Option target="CPP_TOOLs_LOG"/>
 		</Unit>
 		<Unit filename="E:/project/myPrj/SUTL/src/main_cpp.cpp">
-			<Option target="CPP_TOOLs"/>
+			<Option target="CPP_TOOLs_LOG"/>
 		</Unit>
 		<Unit filename="E:/project/myPrj/SUTL/src/main_qml.cpp">
 			<Option target="QML_TOOLs"/>
 		</Unit>
 		<Unit filename="E:/project/myPrj/SUTL/src/qml.qrc">
+			<Option target="CPP_TOOLs_JSON"/>
 			<Option target="QML_TOOLs"/>
-			<Option target="CPP_TOOLs"/>
+			<Option target="CPP_TOOLs_LOG"/>
 		</Unit>
 		<Unit filename="E:/project/myPrj/SUTL/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

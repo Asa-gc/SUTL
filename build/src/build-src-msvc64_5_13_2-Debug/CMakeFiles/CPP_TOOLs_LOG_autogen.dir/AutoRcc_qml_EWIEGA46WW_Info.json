@@ -1,0 +1,30 @@
+{
+	"BUILD_DIR" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_LOG_autogen",
+	"CMAKE_BINARY_DIR" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "E:/project/myPrj/SUTL/src",
+	"CMAKE_SOURCE_DIR" : "E:/project/myPrj/SUTL/src",
+	"INCLUDE_DIR" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_LOG_autogen/include",
+	"INPUTS" : 
+	[
+		"E:/project/myPrj/SUTL/src/main.qml",
+		"E:/project/myPrj/SUTL/src/qml/view/JsonView/JsonNodeEditerView.qml",
+		"E:/project/myPrj/SUTL/src/qml/view/JsonView/JsonViewTest.qml",
+		"E:/project/myPrj/SUTL/src/qml/view/JsonView/JsonNode.qml",
+		"E:/project/myPrj/SUTL/src/qml/view/JsonView/JsonView.qml",
+		"E:/project/myPrj/SUTL/src/qml/view/common/TextInputWithBorder.qml",
+		"E:/project/myPrj/SUTL/src/qml/view/common/TextwithName.qml",
+		"E:/project/myPrj/SUTL/src/qml/view/common/ComboWithName.qml",
+		"E:/project/myPrj/SUTL/src/qml/func/MyJson/MyJson.js"
+	],
+	"LOCK_FILE" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_LOG_autogen.dir/AutoRcc_qml_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "qml" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_qml.cpp",
+	"RCC_EXECUTABLE" : "E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_LOG_autogen.dir/AutoRcc_qml_EWIEGA46WW_Used.txt",
+	"SOURCE" : "E:/project/myPrj/SUTL/src/qml.qrc",
+	"VERBOSITY" : 0
+}

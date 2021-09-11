@@ -14,9 +14,9 @@
 			}
 		]
 	},
-	"id" : "CPP_TOOLs_autogen::@6890427a1f51a3e7e1df",
+	"id" : "CPP_TOOLs_LOG_autogen::@6890427a1f51a3e7e1df",
 	"isGeneratorProvided" : true,
-	"name" : "CPP_TOOLs_autogen",
+	"name" : "CPP_TOOLs_LOG_autogen",
 	"paths" : 
 	{
 		"build" : ".",
@@ -44,13 +44,13 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_autogen",
+			"path" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_LOG_autogen",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_autogen.rule",
+			"path" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_LOG_autogen.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

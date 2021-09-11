@@ -295,6 +295,9 @@
 		},
 		{
 			"path" : "qml.qrc"
+		},
+		{
+			"path" : "qml.qrc"
 		}
 	],
 	"kind" : "cmakeFiles",

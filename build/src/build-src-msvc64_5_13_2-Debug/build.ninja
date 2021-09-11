@@ -41,6 +41,80 @@ include CMakeFiles\rules.ninja
 
 cmake_ninja_workdir = E$:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\
 # =============================================================================
+# Object build statements for EXECUTABLE target CPP_TOOLs_JSON
+
+
+#############################################
+# Order-only phony target for CPP_TOOLs_JSON
+
+build cmake_object_order_depends_target_CPP_TOOLs_JSON: phony || CPP_TOOLs_JSON_autogen CPP_TOOLs_JSON_autogen\EWIEGA46WW\qrc_qml.cpp
+
+build CMakeFiles\CPP_TOOLs_JSON.dir\CPP_TOOLs_JSON_autogen\mocs_compilation.cpp.obj: CXX_COMPILER__CPP_TOOLs_JSON_Debug E$:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_JSON_autogen\mocs_compilation.cpp || cmake_object_order_depends_target_CPP_TOOLs_JSON
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QML_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_JSON_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
+  OBJECT_DIR = CMakeFiles\CPP_TOOLs_JSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs_JSON.dir\CPP_TOOLs_JSON_autogen
+  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs_JSON.dir\
+  TARGET_PDB = CPP_TOOLs_JSON.pdb
+
+build CMakeFiles\CPP_TOOLs_JSON.dir\cpp\Json\main.cpp.obj: CXX_COMPILER__CPP_TOOLs_JSON_Debug E$:\project\myPrj\SUTL\src\cpp\Json\main.cpp || cmake_object_order_depends_target_CPP_TOOLs_JSON
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QML_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_JSON_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
+  OBJECT_DIR = CMakeFiles\CPP_TOOLs_JSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs_JSON.dir\cpp\Json
+  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs_JSON.dir\
+  TARGET_PDB = CPP_TOOLs_JSON.pdb
+
+build CMakeFiles\CPP_TOOLs_JSON.dir\cpp\Json\jsondocument.cpp.obj: CXX_COMPILER__CPP_TOOLs_JSON_Debug E$:\project\myPrj\SUTL\src\cpp\Json\jsondocument.cpp || cmake_object_order_depends_target_CPP_TOOLs_JSON
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QML_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_JSON_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
+  OBJECT_DIR = CMakeFiles\CPP_TOOLs_JSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs_JSON.dir\cpp\Json
+  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs_JSON.dir\
+  TARGET_PDB = CPP_TOOLs_JSON.pdb
+
+build CMakeFiles\CPP_TOOLs_JSON.dir\cpp\Json\nlohmann\jsondocumentImp.cpp.obj: CXX_COMPILER__CPP_TOOLs_JSON_Debug E$:\project\myPrj\SUTL\src\cpp\Json\nlohmann\jsondocumentImp.cpp || cmake_object_order_depends_target_CPP_TOOLs_JSON
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QML_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_JSON_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
+  OBJECT_DIR = CMakeFiles\CPP_TOOLs_JSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs_JSON.dir\cpp\Json\nlohmann
+  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs_JSON.dir\
+  TARGET_PDB = CPP_TOOLs_JSON.pdb
+
+build CMakeFiles\CPP_TOOLs_JSON.dir\CPP_TOOLs_JSON_autogen\EWIEGA46WW\qrc_qml.cpp.obj: CXX_COMPILER__CPP_TOOLs_JSON_Debug E$:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_JSON_autogen\EWIEGA46WW\qrc_qml.cpp || cmake_object_order_depends_target_CPP_TOOLs_JSON
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QML_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_JSON_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
+  OBJECT_DIR = CMakeFiles\CPP_TOOLs_JSON.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs_JSON.dir\CPP_TOOLs_JSON_autogen\EWIEGA46WW
+  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs_JSON.dir\
+  TARGET_PDB = CPP_TOOLs_JSON.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target CPP_TOOLs_JSON
+
+
+#############################################
+# Link the executable CPP_TOOLs_JSON.exe
+
+build CPP_TOOLs_JSON.exe: CXX_EXECUTABLE_LINKER__CPP_TOOLs_JSON_Debug CMakeFiles\CPP_TOOLs_JSON.dir\CPP_TOOLs_JSON_autogen\mocs_compilation.cpp.obj CMakeFiles\CPP_TOOLs_JSON.dir\cpp\Json\main.cpp.obj CMakeFiles\CPP_TOOLs_JSON.dir\cpp\Json\jsondocument.cpp.obj CMakeFiles\CPP_TOOLs_JSON.dir\cpp\Json\nlohmann\jsondocumentImp.cpp.obj CMakeFiles\CPP_TOOLs_JSON.dir\CPP_TOOLs_JSON_autogen\EWIEGA46WW\qrc_qml.cpp.obj | E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Quickd.lib E$:\project\myPrj\SUTL\src\3rd\Log\log4cplus\lib\log4cplusD.lib E$:\project\myPrj\SUTL\src\3rd\Log\glog\lib\glogd.lib E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Qmld.lib E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Networkd.lib E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Guid.lib E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Cored.lib || CPP_TOOLs_JSON_autogen
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = E:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Quickd.lib  E:\project\myPrj\SUTL\src\3rd\Log\log4cplus\lib\log4cplusD.lib  E:\project\myPrj\SUTL\src\3rd\Log\glog\lib\glogd.lib  E:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Qmld.lib  E:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Networkd.lib  E:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Guid.lib  E:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Cored.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\CPP_TOOLs_JSON.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs_JSON.dir\
+  TARGET_FILE = CPP_TOOLs_JSON.exe
+  TARGET_IMPLIB = CPP_TOOLs_JSON.lib
+  TARGET_PDB = CPP_TOOLs_JSON.pdb
+
+# =============================================================================
 # Object build statements for EXECUTABLE target QML_TOOLs
 
 
@@ -97,105 +171,87 @@ build QML_TOOLs.exe: CXX_EXECUTABLE_LINKER__QML_TOOLs_Debug CMakeFiles\QML_TOOLs
   TARGET_PDB = QML_TOOLs.pdb
 
 # =============================================================================
-# Object build statements for EXECUTABLE target CPP_TOOLs
+# Object build statements for EXECUTABLE target CPP_TOOLs_LOG
 
 
 #############################################
-# Order-only phony target for CPP_TOOLs
+# Order-only phony target for CPP_TOOLs_LOG
 
-build cmake_object_order_depends_target_CPP_TOOLs: phony || CPP_TOOLs_autogen CPP_TOOLs_autogen\EWIEGA46WW\qrc_qml.cpp
+build cmake_object_order_depends_target_CPP_TOOLs_LOG: phony || CPP_TOOLs_LOG_autogen CPP_TOOLs_LOG_autogen\EWIEGA46WW\qrc_qml.cpp
 
-build CMakeFiles\CPP_TOOLs.dir\CPP_TOOLs_autogen\mocs_compilation.cpp.obj: CXX_COMPILER__CPP_TOOLs_Debug E$:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_autogen\mocs_compilation.cpp || cmake_object_order_depends_target_CPP_TOOLs
+build CMakeFiles\CPP_TOOLs_LOG.dir\CPP_TOOLs_LOG_autogen\mocs_compilation.cpp.obj: CXX_COMPILER__CPP_TOOLs_LOG_Debug E$:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_LOG_autogen\mocs_compilation.cpp || cmake_object_order_depends_target_CPP_TOOLs_LOG
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QML_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
-  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
-  OBJECT_DIR = CMakeFiles\CPP_TOOLs.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs.dir\CPP_TOOLs_autogen
-  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs.dir\
-  TARGET_PDB = CPP_TOOLs.pdb
+  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_LOG_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
+  OBJECT_DIR = CMakeFiles\CPP_TOOLs_LOG.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs_LOG.dir\CPP_TOOLs_LOG_autogen
+  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs_LOG.dir\
+  TARGET_PDB = CPP_TOOLs_LOG.pdb
 
-build CMakeFiles\CPP_TOOLs.dir\main_cpp.cpp.obj: CXX_COMPILER__CPP_TOOLs_Debug E$:\project\myPrj\SUTL\src\main_cpp.cpp || cmake_object_order_depends_target_CPP_TOOLs
+build CMakeFiles\CPP_TOOLs_LOG.dir\main_cpp.cpp.obj: CXX_COMPILER__CPP_TOOLs_LOG_Debug E$:\project\myPrj\SUTL\src\main_cpp.cpp || cmake_object_order_depends_target_CPP_TOOLs_LOG
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QML_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
-  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
-  OBJECT_DIR = CMakeFiles\CPP_TOOLs.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs.dir
-  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs.dir\
-  TARGET_PDB = CPP_TOOLs.pdb
+  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_LOG_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
+  OBJECT_DIR = CMakeFiles\CPP_TOOLs_LOG.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs_LOG.dir
+  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs_LOG.dir\
+  TARGET_PDB = CPP_TOOLs_LOG.pdb
 
-build CMakeFiles\CPP_TOOLs.dir\cpp\Qt\json\jsondocument.cpp.obj: CXX_COMPILER__CPP_TOOLs_Debug E$:\project\myPrj\SUTL\src\cpp\Qt\json\jsondocument.cpp || cmake_object_order_depends_target_CPP_TOOLs
+build CMakeFiles\CPP_TOOLs_LOG.dir\cpp\Log\log_if.cpp.obj: CXX_COMPILER__CPP_TOOLs_LOG_Debug E$:\project\myPrj\SUTL\src\cpp\Log\log_if.cpp || cmake_object_order_depends_target_CPP_TOOLs_LOG
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QML_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
-  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
-  OBJECT_DIR = CMakeFiles\CPP_TOOLs.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs.dir\cpp\Qt\json
-  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs.dir\
-  TARGET_PDB = CPP_TOOLs.pdb
+  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_LOG_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
+  OBJECT_DIR = CMakeFiles\CPP_TOOLs_LOG.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs_LOG.dir\cpp\Log
+  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs_LOG.dir\
+  TARGET_PDB = CPP_TOOLs_LOG.pdb
 
-build CMakeFiles\CPP_TOOLs.dir\cpp\Qt\json\jsondocumentimp.cpp.obj: CXX_COMPILER__CPP_TOOLs_Debug E$:\project\myPrj\SUTL\src\cpp\Qt\json\jsondocumentimp.cpp || cmake_object_order_depends_target_CPP_TOOLs
+build CMakeFiles\CPP_TOOLs_LOG.dir\cpp\Log\log_imp_log4cplus.cpp.obj: CXX_COMPILER__CPP_TOOLs_LOG_Debug E$:\project\myPrj\SUTL\src\cpp\Log\log_imp_log4cplus.cpp || cmake_object_order_depends_target_CPP_TOOLs_LOG
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QML_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
-  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
-  OBJECT_DIR = CMakeFiles\CPP_TOOLs.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs.dir\cpp\Qt\json
-  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs.dir\
-  TARGET_PDB = CPP_TOOLs.pdb
+  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_LOG_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
+  OBJECT_DIR = CMakeFiles\CPP_TOOLs_LOG.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs_LOG.dir\cpp\Log
+  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs_LOG.dir\
+  TARGET_PDB = CPP_TOOLs_LOG.pdb
 
-build CMakeFiles\CPP_TOOLs.dir\cpp\Log\log_if.cpp.obj: CXX_COMPILER__CPP_TOOLs_Debug E$:\project\myPrj\SUTL\src\cpp\Log\log_if.cpp || cmake_object_order_depends_target_CPP_TOOLs
+build CMakeFiles\CPP_TOOLs_LOG.dir\cpp\Log\log_imp_glog.cpp.obj: CXX_COMPILER__CPP_TOOLs_LOG_Debug E$:\project\myPrj\SUTL\src\cpp\Log\log_imp_glog.cpp || cmake_object_order_depends_target_CPP_TOOLs_LOG
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QML_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
-  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
-  OBJECT_DIR = CMakeFiles\CPP_TOOLs.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs.dir\cpp\Log
-  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs.dir\
-  TARGET_PDB = CPP_TOOLs.pdb
+  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_LOG_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
+  OBJECT_DIR = CMakeFiles\CPP_TOOLs_LOG.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs_LOG.dir\cpp\Log
+  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs_LOG.dir\
+  TARGET_PDB = CPP_TOOLs_LOG.pdb
 
-build CMakeFiles\CPP_TOOLs.dir\cpp\Log\log_imp_log4cplus.cpp.obj: CXX_COMPILER__CPP_TOOLs_Debug E$:\project\myPrj\SUTL\src\cpp\Log\log_imp_log4cplus.cpp || cmake_object_order_depends_target_CPP_TOOLs
+build CMakeFiles\CPP_TOOLs_LOG.dir\CPP_TOOLs_LOG_autogen\EWIEGA46WW\qrc_qml.cpp.obj: CXX_COMPILER__CPP_TOOLs_LOG_Debug E$:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_LOG_autogen\EWIEGA46WW\qrc_qml.cpp || cmake_object_order_depends_target_CPP_TOOLs_LOG
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QML_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
-  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
-  OBJECT_DIR = CMakeFiles\CPP_TOOLs.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs.dir\cpp\Log
-  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs.dir\
-  TARGET_PDB = CPP_TOOLs.pdb
-
-build CMakeFiles\CPP_TOOLs.dir\cpp\Log\log_imp_glog.cpp.obj: CXX_COMPILER__CPP_TOOLs_Debug E$:\project\myPrj\SUTL\src\cpp\Log\log_imp_glog.cpp || cmake_object_order_depends_target_CPP_TOOLs
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QML_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
-  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
-  OBJECT_DIR = CMakeFiles\CPP_TOOLs.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs.dir\cpp\Log
-  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs.dir\
-  TARGET_PDB = CPP_TOOLs.pdb
-
-build CMakeFiles\CPP_TOOLs.dir\CPP_TOOLs_autogen\EWIEGA46WW\qrc_qml.cpp.obj: CXX_COMPILER__CPP_TOOLs_Debug E$:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_autogen\EWIEGA46WW\qrc_qml.cpp || cmake_object_order_depends_target_CPP_TOOLs
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QML_DEBUG -DQT_QML_LIB -DQT_QUICK_LIB
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
-  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
-  OBJECT_DIR = CMakeFiles\CPP_TOOLs.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs.dir\CPP_TOOLs_autogen\EWIEGA46WW
-  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs.dir\
-  TARGET_PDB = CPP_TOOLs.pdb
+  INCLUDES = -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug -IE:\project\myPrj\SUTL\src -IE:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug\CPP_TOOLs_LOG_autogen\include -IE:\project\myPrj\SUTL\src\3rd\Log\log4cplus\include -IE:\project\myPrj\SUTL\src\3rd\Log\glog\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtCore -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\.\mkspecs\win32-msvc -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQuick -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtQml -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtNetwork -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtGui -IE:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\include\QtANGLE
+  OBJECT_DIR = CMakeFiles\CPP_TOOLs_LOG.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_TOOLs_LOG.dir\CPP_TOOLs_LOG_autogen\EWIEGA46WW
+  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs_LOG.dir\
+  TARGET_PDB = CPP_TOOLs_LOG.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target CPP_TOOLs
+# Link build statements for EXECUTABLE target CPP_TOOLs_LOG
 
 
 #############################################
-# Link the executable CPP_TOOLs.exe
+# Link the executable CPP_TOOLs_LOG.exe
 
-build CPP_TOOLs.exe: CXX_EXECUTABLE_LINKER__CPP_TOOLs_Debug CMakeFiles\CPP_TOOLs.dir\CPP_TOOLs_autogen\mocs_compilation.cpp.obj CMakeFiles\CPP_TOOLs.dir\main_cpp.cpp.obj CMakeFiles\CPP_TOOLs.dir\cpp\Qt\json\jsondocument.cpp.obj CMakeFiles\CPP_TOOLs.dir\cpp\Qt\json\jsondocumentimp.cpp.obj CMakeFiles\CPP_TOOLs.dir\cpp\Log\log_if.cpp.obj CMakeFiles\CPP_TOOLs.dir\cpp\Log\log_imp_log4cplus.cpp.obj CMakeFiles\CPP_TOOLs.dir\cpp\Log\log_imp_glog.cpp.obj CMakeFiles\CPP_TOOLs.dir\CPP_TOOLs_autogen\EWIEGA46WW\qrc_qml.cpp.obj | E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Quickd.lib E$:\project\myPrj\SUTL\src\3rd\Log\log4cplus\lib\log4cplusD.lib E$:\project\myPrj\SUTL\src\3rd\Log\glog\lib\glogd.lib E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Qmld.lib E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Networkd.lib E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Guid.lib E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Cored.lib || CPP_TOOLs_autogen
+build CPP_TOOLs_LOG.exe: CXX_EXECUTABLE_LINKER__CPP_TOOLs_LOG_Debug CMakeFiles\CPP_TOOLs_LOG.dir\CPP_TOOLs_LOG_autogen\mocs_compilation.cpp.obj CMakeFiles\CPP_TOOLs_LOG.dir\main_cpp.cpp.obj CMakeFiles\CPP_TOOLs_LOG.dir\cpp\Log\log_if.cpp.obj CMakeFiles\CPP_TOOLs_LOG.dir\cpp\Log\log_imp_log4cplus.cpp.obj CMakeFiles\CPP_TOOLs_LOG.dir\cpp\Log\log_imp_glog.cpp.obj CMakeFiles\CPP_TOOLs_LOG.dir\CPP_TOOLs_LOG_autogen\EWIEGA46WW\qrc_qml.cpp.obj | E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Quickd.lib E$:\project\myPrj\SUTL\src\3rd\Log\log4cplus\lib\log4cplusD.lib E$:\project\myPrj\SUTL\src\3rd\Log\glog\lib\glogd.lib E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Qmld.lib E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Networkd.lib E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Guid.lib E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Cored.lib || CPP_TOOLs_LOG_autogen
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = E:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Quickd.lib  E:\project\myPrj\SUTL\src\3rd\Log\log4cplus\lib\log4cplusD.lib  E:\project\myPrj\SUTL\src\3rd\Log\glog\lib\glogd.lib  E:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Qmld.lib  E:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Networkd.lib  E:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Guid.lib  E:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\lib\Qt5Cored.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = CMakeFiles\CPP_TOOLs.dir
+  OBJECT_DIR = CMakeFiles\CPP_TOOLs_LOG.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs.dir\
-  TARGET_FILE = CPP_TOOLs.exe
-  TARGET_IMPLIB = CPP_TOOLs.lib
-  TARGET_PDB = CPP_TOOLs.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\CPP_TOOLs_LOG.dir\
+  TARGET_FILE = CPP_TOOLs_LOG.exe
+  TARGET_IMPLIB = CPP_TOOLs_LOG.lib
+  TARGET_PDB = CPP_TOOLs_LOG.pdb
 
 
 #############################################
@@ -223,15 +279,30 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 
 #############################################
+# Utility command for CPP_TOOLs_JSON_autogen
+
+build CPP_TOOLs_JSON_autogen: phony CMakeFiles\CPP_TOOLs_JSON_autogen CPP_TOOLs_JSON_autogen\mocs_compilation.cpp
+
+
+#############################################
 # Utility command for QML_TOOLs_autogen
 
 build QML_TOOLs_autogen: phony CMakeFiles\QML_TOOLs_autogen QML_TOOLs_autogen\mocs_compilation.cpp
 
 
 #############################################
-# Utility command for CPP_TOOLs_autogen
+# Utility command for CPP_TOOLs_LOG_autogen
 
-build CPP_TOOLs_autogen: phony CMakeFiles\CPP_TOOLs_autogen CPP_TOOLs_autogen\mocs_compilation.cpp
+build CPP_TOOLs_LOG_autogen: phony CMakeFiles\CPP_TOOLs_LOG_autogen CPP_TOOLs_LOG_autogen\mocs_compilation.cpp
+
+
+#############################################
+# Custom command for CPP_TOOLs_JSON_autogen\EWIEGA46WW\qrc_qml.cpp
+
+build CPP_TOOLs_JSON_autogen\EWIEGA46WW\qrc_qml.cpp | ${cmake_ninja_workdir}CPP_TOOLs_JSON_autogen\EWIEGA46WW\qrc_qml.cpp: CUSTOM_COMMAND E$:\project\myPrj\SUTL\src\qml.qrc CMakeFiles\CPP_TOOLs_JSON_autogen.dir\AutoRcc_qml_EWIEGA46WW_Info.json E$:\project\myPrj\SUTL\src\main.qml E$:\project\myPrj\SUTL\src\qml\view\JsonView\JsonNodeEditerView.qml E$:\project\myPrj\SUTL\src\qml\view\JsonView\JsonViewTest.qml E$:\project\myPrj\SUTL\src\qml\view\JsonView\JsonNode.qml E$:\project\myPrj\SUTL\src\qml\view\JsonView\JsonView.qml E$:\project\myPrj\SUTL\src\qml\view\common\TextInputWithBorder.qml E$:\project\myPrj\SUTL\src\qml\view\common\TextwithName.qml E$:\project\myPrj\SUTL\src\qml\view\common\ComboWithName.qml E$:\project\myPrj\SUTL\src\qml\func\MyJson\MyJson.js E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\bin\rcc.exe || CPP_TOOLs_JSON_autogen
+  COMMAND = cmd.exe /C "cd /D E:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug && E:\program\cmake-3.21.0-rc3-windows-x86_64\bin\cmake.exe -E cmake_autorcc E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_JSON_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Debug"
+  DESC = Automatic RCC for qml.qrc
+  restat = 1
 
 
 #############################################
@@ -244,11 +315,20 @@ build QML_TOOLs_autogen\EWIEGA46WW\qrc_qml.cpp | ${cmake_ninja_workdir}QML_TOOLs
 
 
 #############################################
-# Custom command for CPP_TOOLs_autogen\EWIEGA46WW\qrc_qml.cpp
+# Custom command for CPP_TOOLs_LOG_autogen\EWIEGA46WW\qrc_qml.cpp
 
-build CPP_TOOLs_autogen\EWIEGA46WW\qrc_qml.cpp | ${cmake_ninja_workdir}CPP_TOOLs_autogen\EWIEGA46WW\qrc_qml.cpp: CUSTOM_COMMAND E$:\project\myPrj\SUTL\src\qml.qrc CMakeFiles\CPP_TOOLs_autogen.dir\AutoRcc_qml_EWIEGA46WW_Info.json E$:\project\myPrj\SUTL\src\main.qml E$:\project\myPrj\SUTL\src\qml\view\JsonView\JsonNodeEditerView.qml E$:\project\myPrj\SUTL\src\qml\view\JsonView\JsonViewTest.qml E$:\project\myPrj\SUTL\src\qml\view\JsonView\JsonNode.qml E$:\project\myPrj\SUTL\src\qml\view\JsonView\JsonView.qml E$:\project\myPrj\SUTL\src\qml\view\common\TextInputWithBorder.qml E$:\project\myPrj\SUTL\src\qml\view\common\TextwithName.qml E$:\project\myPrj\SUTL\src\qml\view\common\ComboWithName.qml E$:\project\myPrj\SUTL\src\qml\func\MyJson\MyJson.js E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\bin\rcc.exe || CPP_TOOLs_autogen
-  COMMAND = cmd.exe /C "cd /D E:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug && E:\program\cmake-3.21.0-rc3-windows-x86_64\bin\cmake.exe -E cmake_autorcc E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Debug"
+build CPP_TOOLs_LOG_autogen\EWIEGA46WW\qrc_qml.cpp | ${cmake_ninja_workdir}CPP_TOOLs_LOG_autogen\EWIEGA46WW\qrc_qml.cpp: CUSTOM_COMMAND E$:\project\myPrj\SUTL\src\qml.qrc CMakeFiles\CPP_TOOLs_LOG_autogen.dir\AutoRcc_qml_EWIEGA46WW_Info.json E$:\project\myPrj\SUTL\src\main.qml E$:\project\myPrj\SUTL\src\qml\view\JsonView\JsonNodeEditerView.qml E$:\project\myPrj\SUTL\src\qml\view\JsonView\JsonViewTest.qml E$:\project\myPrj\SUTL\src\qml\view\JsonView\JsonNode.qml E$:\project\myPrj\SUTL\src\qml\view\JsonView\JsonView.qml E$:\project\myPrj\SUTL\src\qml\view\common\TextInputWithBorder.qml E$:\project\myPrj\SUTL\src\qml\view\common\TextwithName.qml E$:\project\myPrj\SUTL\src\qml\view\common\ComboWithName.qml E$:\project\myPrj\SUTL\src\qml\func\MyJson\MyJson.js E$:\program\Qt\Qt5_13_2\5.13.2\msvc2017_64\bin\rcc.exe || CPP_TOOLs_LOG_autogen
+  COMMAND = cmd.exe /C "cd /D E:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug && E:\program\cmake-3.21.0-rc3-windows-x86_64\bin\cmake.exe -E cmake_autorcc E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_LOG_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Debug"
   DESC = Automatic RCC for qml.qrc
+  restat = 1
+
+
+#############################################
+# Custom command for CMakeFiles\CPP_TOOLs_JSON_autogen
+
+build CMakeFiles\CPP_TOOLs_JSON_autogen CPP_TOOLs_JSON_autogen\mocs_compilation.cpp | ${cmake_ninja_workdir}CMakeFiles\CPP_TOOLs_JSON_autogen ${cmake_ninja_workdir}CPP_TOOLs_JSON_autogen\mocs_compilation.cpp: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D E:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug && E:\program\cmake-3.21.0-rc3-windows-x86_64\bin\cmake.exe -E cmake_autogen E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_JSON_autogen.dir/AutogenInfo.json Debug"
+  DESC = Automatic MOC and UIC for target CPP_TOOLs_JSON
   restat = 1
 
 
@@ -262,17 +342,19 @@ build CMakeFiles\QML_TOOLs_autogen QML_TOOLs_autogen\mocs_compilation.cpp | ${cm
 
 
 #############################################
-# Custom command for CMakeFiles\CPP_TOOLs_autogen
+# Custom command for CMakeFiles\CPP_TOOLs_LOG_autogen
 
-build CMakeFiles\CPP_TOOLs_autogen CPP_TOOLs_autogen\mocs_compilation.cpp | ${cmake_ninja_workdir}CMakeFiles\CPP_TOOLs_autogen ${cmake_ninja_workdir}CPP_TOOLs_autogen\mocs_compilation.cpp: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D E:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug && E:\program\cmake-3.21.0-rc3-windows-x86_64\bin\cmake.exe -E cmake_autogen E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_autogen.dir/AutogenInfo.json Debug"
-  DESC = Automatic MOC and UIC for target CPP_TOOLs
+build CMakeFiles\CPP_TOOLs_LOG_autogen CPP_TOOLs_LOG_autogen\mocs_compilation.cpp | ${cmake_ninja_workdir}CMakeFiles\CPP_TOOLs_LOG_autogen ${cmake_ninja_workdir}CPP_TOOLs_LOG_autogen\mocs_compilation.cpp: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D E:\project\myPrj\SUTL\build\src\build-src-msvc64_5_13_2-Debug && E:\program\cmake-3.21.0-rc3-windows-x86_64\bin\cmake.exe -E cmake_autogen E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_LOG_autogen.dir/AutogenInfo.json Debug"
+  DESC = Automatic MOC and UIC for target CPP_TOOLs_LOG
   restat = 1
 
 # =============================================================================
 # Target aliases.
 
-build CPP_TOOLs: phony CPP_TOOLs.exe
+build CPP_TOOLs_JSON: phony CPP_TOOLs_JSON.exe
+
+build CPP_TOOLs_LOG: phony CPP_TOOLs_LOG.exe
 
 build QML_TOOLs: phony QML_TOOLs.exe
 
@@ -284,7 +366,7 @@ build QML_TOOLs: phony QML_TOOLs.exe
 #############################################
 # Folder: E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug
 
-build all: phony QML_TOOLs.exe CPP_TOOLs.exe
+build all: phony CPP_TOOLs_JSON.exe QML_TOOLs.exe CPP_TOOLs_LOG.exe
 
 # =============================================================================
 # Built-in targets

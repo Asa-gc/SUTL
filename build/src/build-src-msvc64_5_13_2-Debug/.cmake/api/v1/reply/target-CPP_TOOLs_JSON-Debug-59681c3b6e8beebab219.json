@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "CPP_TOOLs.exe"
+			"path" : "CPP_TOOLs_JSON.exe"
 		},
 		{
-			"path" : "CPP_TOOLs.pdb"
+			"path" : "CPP_TOOLs_JSON.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 66,
+				"line" : 82,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 78,
+				"line" : 89,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 76,
+				"line" : 87,
 				"parent" : 0
 			},
 			{
@@ -108,7 +108,7 @@
 				},
 				{
 					"backtrace" : 0,
-					"path" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_autogen/include"
+					"path" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_JSON_autogen/include"
 				},
 				{
 					"backtrace" : 4,
@@ -174,10 +174,7 @@
 				1,
 				3,
 				5,
-				7,
-				9,
-				11,
-				13
+				8
 			]
 		}
 	],
@@ -185,10 +182,10 @@
 	[
 		{
 			"backtrace" : 0,
-			"id" : "CPP_TOOLs_autogen::@6890427a1f51a3e7e1df"
+			"id" : "CPP_TOOLs_JSON_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "CPP_TOOLs::@6890427a1f51a3e7e1df",
+	"id" : "CPP_TOOLs_JSON::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -240,8 +237,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "CPP_TOOLs",
-	"nameOnDisk" : "CPP_TOOLs.exe",
+	"name" : "CPP_TOOLs_JSON",
+	"nameOnDisk" : "CPP_TOOLs_JSON.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -257,10 +254,7 @@
 				1,
 				3,
 				5,
-				7,
-				9,
-				11,
-				13
+				8
 			]
 		},
 		{
@@ -269,23 +263,21 @@
 			[
 				2,
 				4,
-				6,
-				8,
-				10
+				6
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				12
+				7
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				14
+				9
 			]
 		}
 	],
@@ -295,69 +287,41 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_autogen/mocs_compilation.cpp",
+			"path" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_JSON_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main_cpp.cpp",
+			"path" : "cpp/Json/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "cpp/Qt/json/jsondocument.h",
+			"path" : "cpp/Json/jsondocument.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "cpp/Qt/json/jsondocument.cpp",
+			"path" : "cpp/Json/jsondocument.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "cpp/Qt/json/jsondocumentimp.h",
+			"path" : "cpp/Json/jsondocumentImp.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "cpp/Qt/json/jsondocumentimp.cpp",
+			"path" : "cpp/Json/nlohmann/jsondocumentImp.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "cpp/Log/log_if.h",
+			"path" : "cpp/Json/nlohmann/json.hpp",
 			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "cpp/Log/log_if.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "cpp/Log/log_imp_log4cplus.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "cpp/Log/log_imp_log4cplus.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "cpp/Log/log_imp_glog.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "cpp/Log/log_imp_glog.cpp",
-			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
@@ -368,13 +332,13 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_autogen/EWIEGA46WW/qrc_qml.cpp",
+			"path" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_JSON_autogen/EWIEGA46WW/qrc_qml.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_autogen/EWIEGA46WW/qrc_qml.cpp.rule",
+			"path" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_JSON_autogen/EWIEGA46WW/qrc_qml.cpp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],

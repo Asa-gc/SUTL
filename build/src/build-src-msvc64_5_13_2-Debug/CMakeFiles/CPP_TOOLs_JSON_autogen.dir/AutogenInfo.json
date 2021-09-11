@@ -1,5 +1,5 @@
 {
-	"BUILD_DIR" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_autogen",
+	"BUILD_DIR" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_JSON_autogen",
 	"CMAKE_BINARY_DIR" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug",
 	"CMAKE_CURRENT_BINARY_DIR" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug",
 	"CMAKE_CURRENT_SOURCE_DIR" : "E:/project/myPrj/SUTL/src",
@@ -75,6 +75,7 @@
 		"E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake",
 		"E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
 		"E:/project/myPrj/SUTL/src/qml.qrc",
+		"E:/project/myPrj/SUTL/src/qml.qrc",
 		"E:/project/myPrj/SUTL/src/qml.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "E:/project/myPrj/SUTL/src",
@@ -83,57 +84,27 @@
 	"HEADERS" : 
 	[
 		[
-			"E:/project/myPrj/SUTL/src/cpp/Log/log_if.h",
+			"E:/project/myPrj/SUTL/src/cpp/Json/jsondocument.h",
 			"MU",
-			"Q7UDZPCYSX/moc_log_if.cpp",
+			"PFZ27GRHG2/moc_jsondocument.cpp",
 			null
 		],
 		[
-			"E:/project/myPrj/SUTL/src/cpp/Log/log_imp_glog.h",
+			"E:/project/myPrj/SUTL/src/cpp/Json/jsondocumentImp.h",
 			"MU",
-			"Q7UDZPCYSX/moc_log_imp_glog.cpp",
+			"PFZ27GRHG2/moc_jsondocumentImp.cpp",
 			null
 		],
 		[
-			"E:/project/myPrj/SUTL/src/cpp/Log/log_imp_log4cplus.h",
+			"E:/project/myPrj/SUTL/src/cpp/Json/nlohmann/json.hpp",
 			"MU",
-			"Q7UDZPCYSX/moc_log_imp_log4cplus.cpp",
-			null
-		],
-		[
-			"E:/project/myPrj/SUTL/src/cpp/Qt/json/jsondocument.h",
-			"MU",
-			"YYHVZQO2LO/moc_jsondocument.cpp",
-			null
-		],
-		[
-			"E:/project/myPrj/SUTL/src/cpp/Qt/json/jsondocumentimp.h",
-			"MU",
-			"YYHVZQO2LO/moc_jsondocumentimp.cpp",
-			null
-		],
-		[
-			"E:/project/myPrj/SUTL/src/cpp/json/jsondocument.h",
-			"MU",
-			"CN2BBIBF5Z/moc_jsondocument.cpp",
-			null
-		],
-		[
-			"E:/project/myPrj/SUTL/src/cpp/json/jsondocumentImp.h",
-			"MU",
-			"CN2BBIBF5Z/moc_jsondocumentImp.cpp",
-			null
-		],
-		[
-			"E:/project/myPrj/SUTL/src/cpp/json/nlohmann/json.hpp",
-			"MU",
-			"P64Q2TRX5O/moc_json.cpp",
+			"X3TFXOXL7B/moc_json.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_autogen/include",
-	"MOC_COMPILATION_FILE" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_JSON_autogen/include",
+	"MOC_COMPILATION_FILE" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CPP_TOOLs_JSON_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -175,30 +146,21 @@
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 6,
-	"PARSE_CACHE_FILE" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_JSON_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "E:/program/Qt/Qt5_13_2/5.13.2/msvc2017_64/bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 5,
 	"QT_VERSION_MINOR" : 13,
-	"SETTINGS_FILE" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CPP_TOOLs_JSON_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "E:/project/myPrj/SUTL/src/cpp/Log/log_if.cpp", "MU", null ],
-		[ "E:/project/myPrj/SUTL/src/cpp/Log/log_imp_glog.cpp", "MU", null ],
-		[ "E:/project/myPrj/SUTL/src/cpp/Log/log_imp_log4cplus.cpp", "MU", null ],
-		[ "E:/project/myPrj/SUTL/src/cpp/Qt/json/jsondocument.cpp", "MU", null ],
+		[ "E:/project/myPrj/SUTL/src/cpp/Json/jsondocument.cpp", "MU", null ],
+		[ "E:/project/myPrj/SUTL/src/cpp/Json/main.cpp", "MU", null ],
 		[
-			"E:/project/myPrj/SUTL/src/cpp/Qt/json/jsondocumentimp.cpp",
+			"E:/project/myPrj/SUTL/src/cpp/Json/nlohmann/jsondocumentImp.cpp",
 			"MU",
 			null
-		],
-		[ "E:/project/myPrj/SUTL/src/cpp/json/jsondocument.cpp", "MU", null ],
-		[
-			"E:/project/myPrj/SUTL/src/cpp/json/nlohmann/jsondocumentImp.cpp",
-			"MU",
-			null
-		],
-		[ "E:/project/myPrj/SUTL/src/main_cpp.cpp", "MU", null ]
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

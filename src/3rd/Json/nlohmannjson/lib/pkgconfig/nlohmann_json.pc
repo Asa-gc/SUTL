@@ -1,0 +1,4 @@
+Name: nlohmann_json
+Description: JSON for Modern C++
+Version: 3.9.1
+Cflags: -ID:/runners/builds/_xL5QZgx/0/DeepLearningGroup/deepinspectsdk/build_gpu_Release/ExternalProject/nlohmannjson/include

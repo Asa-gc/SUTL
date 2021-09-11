@@ -31,7 +31,7 @@ target_link_libraries(QML_TOOLs
   PRIVATE Qt5::Core Qt5::Quick)
 
 
-########cpp_tool#########
+########cpp_tool_Log#########
 
 set(LOG4CPLUS_ROOT "${CMAKE_CURRENT_LIST_DIR}/3rd/Log/log4cplus")
 set(LOG4CPLUS_INCLUDEDIR "${LOG4CPLUS_ROOT}/include")
@@ -50,31 +50,42 @@ endif()
 include_directories(${LOG4CPLUS_INCLUDEDIR})
 include_directories(${GLOG_INCLUDEDIR})
 
-set(LOG_FILES cpp/Log/log_if.h
-              cpp/Log/log_if.cpp
-              cpp/Log/log_imp_log4cplus.h
-              cpp/Log/log_imp_log4cplus.cpp
-              cpp/Log/log_imp_glog.h
-              cpp/Log/log_imp_glog.cpp
-              )
-if(ANDROID)
-    add_library(CPP_TOOLs SHARED
-      main.cpp
-      qml.qrc
+set(LOG_FILES
+    cpp/Log/log_if.h
+    cpp/Log/log_if.cpp
+    cpp/Log/log_imp_log4cplus.h
+    cpp/Log/log_imp_log4cplus.cpp
+    cpp/Log/log_imp_glog.h
+    cpp/Log/log_imp_glog.cpp
     )
-else()
-    add_executable(CPP_TOOLs
-      main_cpp.cpp
-      cpp/Qt/json/jsondocument.h
-      cpp/Qt/json/jsondocument.cpp
-      cpp/Qt/json/jsondocumentimp.h
-      cpp/Qt/json/jsondocumentimp.cpp
-      ${LOG_FILES}
-      qml.qrc
-    )
-endif()
-target_compile_definitions(CPP_TOOLs
+
+add_executable(CPP_TOOLs_LOG
+  main_cpp.cpp
+  ${LOG_FILES}
+  qml.qrc
+)
+target_compile_definitions(CPP_TOOLs_LOG
   PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
-target_link_libraries(CPP_TOOLs
+target_link_libraries(CPP_TOOLs_LOG
+  PRIVATE Qt5::Core Qt5::Quick ${LOG4CPLUS_LIBRARYFile} ${GLOG_LIBRARYFile}
+  )
+
+########cpp_tool_JSON#########
+set(JSON_DIR "${CMAKE_CURRENT_LIST_DIR}/cpp/Json")
+set(JSON_FILES
+    cpp/Json/jsondocument.h
+    cpp/Json/jsondocument.cpp
+    cpp/Json/jsondocumentImp.h
+    cpp/Json/nlohmann/jsondocumentImp.cpp
+    cpp/Json/nlohmann/json.hpp
+    )
+add_executable(CPP_TOOLs_JSON
+    ${JSON_DIR}/main.cpp
+    ${JSON_FILES}
+    qml.qrc
+)
+target_compile_definitions(CPP_TOOLs_JSON
+  PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
+target_link_libraries(CPP_TOOLs_JSON
   PRIVATE Qt5::Core Qt5::Quick ${LOG4CPLUS_LIBRARYFile} ${GLOG_LIBRARYFile}
   )
