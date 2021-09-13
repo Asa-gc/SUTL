@@ -3,35 +3,37 @@
 #include "log_if.h"
 #include "glog/logging.h"
 #include <map>
+namespace _sutl {
+class Log_Imp_Glog:public Log_Imp{
+public:
+    virtual ~Log_Imp_Glog();
+    virtual void log_worker(LOG_LEVEL _ll, const std::string&_data);
+    static Log_Imp_Glog* get_instance(const std::map<std::string, std::string> &_log_arg=
+            std::map<std::string, std::string>())
+    {
+        std::string log_dir="./logs";
+        if(_log_arg.find("log_dir")!=_log_arg.end()){
+           // log_dir=_log_arg.at("log_dir");
+        }
+        std::string log_file="./logs/logs.log";
+        if(_log_arg.find("log_file")!=_log_arg.end()){
+            log_file=_log_arg.at("log_file");
+        }
+        std::string log_severitie="";
+        if(_log_arg.find("log_severitie")!=_log_arg.end()){
+            log_severitie=_log_arg.at("log_file");
+        }
+        if(nullptr==s_glog){
+            s_glog=new Log_Imp_Glog(log_dir,log_file,log_severitie);
+        }
+        return s_glog;
+    }
+protected:
+    Log_Imp_Glog(const std::string& _log_dir,
+                 const std::string& _log_file="", const std::string &_log_severitie="");
+    static Log_Imp_Glog *s_glog;
+};
 
-#define LOG_TRACE(f_n,l_n,c_p,e_i)     \
-    _sutl::Log_Glog_Trace_func lltf(f_n,l_n,c_p,e_i)
-
-#define LOG_TRACE1(f_n,l_n,c_p)     \
-    _sutl::Log_Glog_Trace_func lltf(f_n,l_n,c_p)
-
-#define LOG_TRACE2(f_n,l_n)     \
-    _sutl::Log_Glog_Trace_func lltf(f_n,l_n)
-
-#define LOG_TRACE3(f_n)     \
-    _sutl::Log_Glog_Trace_func lltf(f_n)
-
-#define LOG_TRACE4(f_n,e_i)     \
-    _sutl::Log_Glog_Trace_func lltf(f_n,"","",e_i)
-
-/**必须在可访问代码块下声明过LOG_TRACEx才可用 **/
-
-#define LOG_FATAL(data)     \
-    lltf.log_fatal(data)
-#define LOG_ERROR(data)     \
-    lltf.log_error(data)
-#define LOG_WARN(data)     \
-    lltf.log_warn(data)
-#define LOG_INFO(data)     \
-    lltf.log_info(data)
-#define LOG_DEBUG(data)     \
-    lltf.log_debug(data)
-#define LOG_TRACE5(data)     \
-    lltf.log_trace(data)
+}
 
 #endif // LOG_IMP_LOG4CPLUS_H

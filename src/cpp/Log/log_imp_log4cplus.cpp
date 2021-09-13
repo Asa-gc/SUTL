@@ -107,7 +107,7 @@ void Log_Log4cplus_Trace_func::trace_log_worker(const log4cplus::tstring &_func_
     m_loger_name=_loger_name;
     log4cplus::tstring data=m_func_name;
     if(!_ext_inf.empty()){
-        data+=(LOG4CPLUS_TEXT(" \t[EXT_INF: ")+_ext_inf+LOG4CPLUS_TEXT("] \t START"));
+        data+=(LOG4CPLUS_TEXT(" \t[EXT_INF: ")+_ext_inf+LOG4CPLUS_TEXT("]"));
     }
     data+=LOG4CPLUS_TEXT(" \tSTART");
     if(nullptr==s_loger){

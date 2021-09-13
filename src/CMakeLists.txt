@@ -33,6 +33,8 @@ target_link_libraries(QML_TOOLs
 
 ########cpp_tool_Log#########
 
+set(LOG_DIR "${CMAKE_CURRENT_LIST_DIR}/cpp/Log")
+
 set(LOG4CPLUS_ROOT "${CMAKE_CURRENT_LIST_DIR}/3rd/Log/log4cplus")
 set(LOG4CPLUS_INCLUDEDIR "${LOG4CPLUS_ROOT}/include")
 
@@ -53,14 +55,15 @@ include_directories(${GLOG_INCLUDEDIR})
 set(LOG_FILES
     cpp/Log/log_if.h
     cpp/Log/log_if.cpp
+    cpp/Log/logapi.h
     cpp/Log/log_imp_log4cplus.h
-    cpp/Log/log_imp_log4cplus.cpp
+#    cpp/Log/log_imp_log4cplus.cpp
     cpp/Log/log_imp_glog.h
     cpp/Log/log_imp_glog.cpp
     )
 
 add_executable(CPP_TOOLs_LOG
-  main_cpp.cpp
+  ${LOG_DIR}/main.cpp
   ${LOG_FILES}
   qml.qrc
 )
