@@ -1,0 +1,59 @@
+# CMake build directory
+*build*/
+
+# Backup files.
+*~
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+*.pro.user
+CMakeLists.txt.user
+compile_commands.json
+
+*.vscode/*
+.idea/
+
+.vscode/
+*temp/
+bak*/
+
+.vs/
+CMakeSettings.json
+*.vs.json
+
+*.patch
+
+*cache/
+
+*3rd*/
+
