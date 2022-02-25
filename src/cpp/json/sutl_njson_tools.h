@@ -45,7 +45,6 @@ public:
         return  _j.is_discarded()?RET_NG_ARG:RET_OK;
     }
 
-
     Get_Value_Func(int)
     Get_Value_Func(double)
     Get_Value_Func(bool)
@@ -53,13 +52,26 @@ public:
     Get_Value_Func(json_object)
     Get_Value_Func(json_array)
 
-
     Set_Value_Func(int)
     Set_Value_Func(double)
     Set_Value_Func(bool)
     Set_Value_Func(const std::string&)
     Set_Value_Func(const json_object&)
     Set_Value_Func(const json_array&)
+
+    int add_key(njson& _j,const std::string &_key,const std::string &_parent_key,
+                const njson&_value=njson(),const conditions &_conditions=conditions(),
+                int _index=-1){
+        njson_data_ptr_container ndpc=find_njson_value_ex(_j,_parent_key,_conditions,-1);
+        return ndpc.add_key(_key,_value,_index);
+    }
+
+    int delete_key(njson& _j,const std::string &_key,
+                   const conditions &_conditions=conditions(),int _index=-1){
+        njson_data_ptr_container ndpc;
+        find_njson_value_ex(_j,_key,_conditions,ndpc,_index);
+        return ndpc.delete_key(_key,_index);
+    }
 
 protected:
     enum PTR_TYPE {
@@ -81,9 +93,10 @@ protected:
         njson_data_ptr_container() :type(void_ptr), ptr(nullptr) {}
         njson_data_ptr_container(njson&_j) { this->set_njson_ptr(_j); }
         njson_data_ptr_container(const njson_data_ptr_container&_ndpc) :type(_ndpc.type), ptr(_ndpc.ptr) {}
-        void operator=(const njson_data_ptr_container&_ndpc) { type = _ndpc.type; ptr = _ndpc.ptr; }
+        void operator=(const njson_data_ptr_container&_ndpc) { this->set_ptr(_ndpc); }
 
         void set_nullptr() { type = void_ptr; ptr = nullptr; }
+        void set_ptr(const njson_data_ptr_container&_ndpc) { type = _ndpc.type; ptr = _ndpc.ptr; }
         void set_ptr(njson::object_t*_ptr) { if (nullptr == _ptr) { return set_nullptr(); }type = object_ptr; ptr = _ptr; }
         void set_ptr(njson::array_t*_ptr) { if (nullptr == _ptr) { return set_nullptr(); }type = array_ptr; ptr = _ptr; }
         void set_ptr(njson::string_t*_ptr) { if (nullptr == _ptr) { return set_nullptr(); }type = string_ptr; ptr = _ptr; }
@@ -136,19 +149,45 @@ protected:
 
         int set_val(njson::object_t _val) { if (nullptr == ptr || object_ptr != type) { return RET_NG_ARG; }*(static_cast<njson::object_t*>(ptr)) = _val; return RET_OK; }
         int set_val(njson::array_t _val) { if (nullptr == ptr || array_ptr != type) { return RET_NG_ARG; }*(static_cast<njson::array_t*>(ptr)) = _val; return RET_OK; }
-        int set_val(njson::string_t _val) {
-            if (nullptr == ptr || string_ptr != type) {
-                return RET_NG_ARG;
-            }
-            *(static_cast<njson::string_t*>(ptr)) = _val;
-            return RET_OK;
-        }
+        int set_val(njson::string_t _val) {if (nullptr == ptr || string_ptr != type) {return RET_NG_ARG;}*(static_cast<njson::string_t*>(ptr)) = _val;return RET_OK;}
         int set_val(njson::binary_t _val) { if (nullptr == ptr || binary_ptr != type) { return RET_NG_ARG; }*(static_cast<njson::binary_t*>(ptr)) = _val; return RET_OK; }
         int set_val(njson::boolean_t _val) { if (nullptr == ptr || boolean_ptr != type) { return RET_NG_ARG; }*(static_cast<njson::boolean_t*>(ptr)) = _val; return RET_OK; }
         int set_val(njson::number_integer_t _val) { if (nullptr == ptr || integer_ptr != type) { return RET_NG_ARG; }*(static_cast<njson::number_integer_t*>(ptr)) = _val; return RET_OK; }
         int set_val(int _val) { if (nullptr == ptr || integer_ptr != type) { return RET_NG_ARG; }*(static_cast<njson::number_integer_t*>(ptr)) = _val; return RET_OK; }
         int set_val(njson::number_unsigned_t _val) { if (nullptr == ptr || uinteger_ptr != type) { return RET_NG_ARG; }*(static_cast<njson::number_unsigned_t*>(ptr)) = _val; return RET_OK; }
         int set_val(njson::number_float_t _val) { if (nullptr == ptr || float_ptr != type) { return RET_NG_ARG; }*(static_cast<njson::number_float_t*>(ptr)) = _val; return RET_OK; }
+
+        int add_key(const std::string &_key,const njson &_value=njson(),int _index=-1){
+            if(object_ptr==this->type){
+                njson::object_t*tp= this->get_object_ptr();
+                tp->insert(std::make_pair(_key,_value));//if this has same key, replace it;
+                return RET_OK;
+            }
+            if(array_ptr==this->type){
+                if(_index<0){return RET_NG_ARG;}
+                njson::array_t* tp= this->get_array_ptr();
+                int size =tp->size();
+                if(_index>=size){_index=size;}
+                tp->insert(tp->begin()+_index,_value);
+                return RET_OK;
+            }
+            return RET_NG_TYPE;
+        }
+        int delete_key(const std::string &_key,int _index=-1){
+            if(object_ptr==this->type){
+                njson::object_t*tp= this->get_object_ptr();
+                tp->erase(_key);
+                return RET_OK;
+            }
+            if(array_ptr==this->type){
+                njson::array_t* tp= this->get_array_ptr();
+                int size =tp->size();
+                if(_index<0||_index>=size){return RET_NG_ARG;}
+                tp->erase(tp->begin()+_index);
+                return RET_OK;
+            }
+            return RET_NG_TYPE;
+        }
     };
 
     njson_data_ptr_container find_njson_value_obj_helper(njson::object_t* _obj, const std::string& _key,
@@ -190,16 +229,24 @@ protected:
         }
     }
 
-    njson_data_ptr_container find_njson_value_helper(njson_data_ptr_container& _ndpc,
-                                                     const std::string& _key, int _index = -1){
+    njson_data_ptr_container find_njson_value_helper(njson_data_ptr_container& _ndpc,const std::string& _key,
+                                                     njson_data_ptr_container& _parent_ndpc,int _index = -1){
         std::queue<njson_data_ptr_container> tqueue;
         njson_data_ptr_container tmp;
         njson_data_ptr_container cur;
         tqueue.push(_ndpc);
-        if(array_ptr==_ndpc.type&&_key.empty()){
-            njson::array_t* tary=_ndpc.get_array_ptr();
-            if(_index<0||_index>=tary->size()) return njson_data_ptr_container();
-            return njson_data_ptr_container((*tary)[_index]);
+        if(_key.empty()){
+            njson_data_ptr_container res;
+            if(array_ptr==_ndpc.type){
+                njson::array_t* tary=_ndpc.get_array_ptr();
+                if(_index<-1){res.set_ptr(_ndpc);}
+                else if(_index>=tary->size())return njson_data_ptr_container();
+                else{res.set_ptr((*tary)[_index]);}
+            }
+            if(object_ptr==_ndpc.type){
+                res.set_ptr(_ndpc);
+            }
+            return res;
         }
         //BFS
         while (!tqueue.empty()) {
@@ -209,6 +256,12 @@ protected:
                 //check each element`s type and do something in cur json object node,
                 tmp = find_njson_value_obj_helper(cur.get(object_ptr), _key, tqueue, _index);
                 if (void_ptr != tmp.type) {
+                    if(_index<0){
+                        _parent_ndpc.set_ptr(cur.get(object_ptr));
+                    }else{
+                        std::queue<njson_data_ptr_container> tmp;
+                        _parent_ndpc.set_ptr(find_njson_value_obj_helper(cur.get(object_ptr), _key, tmp, -1));
+                    }
                     return tmp;
                 }
             }
@@ -224,32 +277,17 @@ protected:
         if (!(_j.is_array() || _j.is_object())) {//if not array or object return nullptr
             return njson_data_ptr_container();
         }
+        njson_data_ptr_container parent_ndpc;
         njson_data_ptr_container ndpc(_j);
-        return find_njson_value_helper(ndpc,_key,_index);
-        if(false){
-            std::queue<njson_data_ptr_container> tqueue;
-            njson_data_ptr_container tmp;
-            njson_data_ptr_container cur(_j);
-            tqueue.push(cur);
-            //BFS
-            while (!tqueue.empty()) {
-                cur = tqueue.front();
-                tqueue.pop();
-                if (object_ptr == cur.type) {
-                    //check each element`s type and do something in cur json object node,
-                    tmp = find_njson_value_obj_helper(cur.get(object_ptr), _key, tqueue, _index);
-                    if (void_ptr != tmp.type) {
-                        return tmp;
-                    }
-                }
-                else if (array_ptr == cur.type) {
-                    //check each element`s type and do something  in cur json array node
-                    find_njson_value_ary_helper(cur.get(array_ptr), tqueue);
-                }
-            }
-            //unfinded _key`s value;
+        return find_njson_value_helper(ndpc,_key,parent_ndpc,_index);
+    }
+    njson_data_ptr_container find_njson_value(njson& _j, const std::string& _key,
+                                              njson_data_ptr_container &_parent_ndpc,int _index = -1) {
+        if (!(_j.is_array() || _j.is_object())) {//if not array or object return nullptr
             return njson_data_ptr_container();
         }
+        njson_data_ptr_container ndpc(_j);
+        return find_njson_value_helper(ndpc,_key,_parent_ndpc,_index);
     }
 
     // <str?index> 为获取key为str的数组的第index个元素
@@ -271,20 +309,37 @@ protected:
             _dst=_src.substr(0,idx);
         }
     }
-    njson_data_ptr_container find_njson_value_ex(njson& _j, const std::string& _key, const conditions &_conditions,int _index = -1){
+    njson_data_ptr_container find_njson_value_ex(njson& _j, const std::string& _key, const conditions &_conditions,
+                                                 njson_data_ptr_container &_parent_ndpc,int _index = -1){
         njson_data_ptr_container tmp;
         njson_data_ptr_container cur(_j);
         std::string cur_condition="";
         int idx=-1;
         for(auto _condition:_conditions){
             parse_condition(_condition,cur_condition,idx);
-            cur=find_njson_value_helper(cur,cur_condition,idx);
+            cur=find_njson_value_helper(cur,cur_condition,tmp,idx);
             if (void_ptr == cur.type) {
                 return cur;
             }
         }
-        return find_njson_value_helper(cur,_key,_index);
+        return find_njson_value_helper(cur,_key,_parent_ndpc,_index);
     }
+    njson_data_ptr_container find_njson_value_ex(njson& _j, const std::string& _key,
+                                                 const conditions &_conditions,int _index = -1){
+         njson_data_ptr_container tmp;
+         njson_data_ptr_container cur(_j);
+         std::string cur_condition="";
+         int idx=-1;
+         for(auto _condition:_conditions){
+             parse_condition(_condition,cur_condition,idx);
+             cur=find_njson_value_helper(cur,cur_condition,tmp,idx);
+             if (void_ptr == cur.type) {
+                 return cur;
+             }
+         }
+         return find_njson_value_helper(cur,_key,tmp,_index);
+     }
+
 protected:
     static Njson_Tool* s_njson_tool;
 };

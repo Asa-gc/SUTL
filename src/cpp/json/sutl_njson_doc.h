@@ -32,6 +32,9 @@
 #define Doc_Get_Value_Func(type)  Doc_Get_Value_Func_Helper(type, )
 #define Doc_Set_Value_Func(type)  Doc_Set_Value_Func_Helper(type, )
 
+#define Doc_Add_Key_Func(type)
+#define Doc_Delete_Key_Func(type)
+
 namespace _sutl {
 class Sutl_Njson_Doc{
 public:
@@ -55,6 +58,14 @@ public:
     Doc_Set_Value_Func(const json_object&)
     Doc_Set_Value_Func(const json_array&)
 
+
+    Doc_Add_Key_Func()
+    Doc_Delete_Key_Func()
+
+    int add_key(const std::string &_key,const conditions &_conditions=conditions(),int _index=-1);
+
+    int delete_key(const std::string &_name, int _flag=0,
+                      const std::string &_higher_node_name="");
 private:
     njson m_data;
 #ifdef WITH_MUTEX
