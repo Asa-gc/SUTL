@@ -26,8 +26,8 @@ The CXX compiler identification is MSVC, found in "E:/project/myPrj/SUTL/build/s
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: E:/project/myPrj/SUTL/build/src/build-src-msvc64_5_13_2-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_1408a && [1/2] Building CXX object CMakeFiles\cmTC_1408a.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_1408a.exe
+Run Build Command(s):C:/PROGRA~2/MICROS~2/2017/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe cmTC_36d0a && [1/2] Building CXX object CMakeFiles\cmTC_36d0a.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_36d0a.exe
 
 
 

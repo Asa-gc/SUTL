@@ -1,0 +1,9 @@
+# ninja log v5
+0	1386	658990228	CMakeFiles/testGTest.dir/main.cpp.obj	61b88790df0b2709
+1390	2649	658990229	testGTest.exe	4f0a61b6f9f402ce
+1	877	658990238	CMakeFiles/testGTest.dir/main.cpp.obj	61b88790df0b2709
+877	1496	658990238	testGTest.exe	4f0a61b6f9f402ce
+0	1056	658990661	CMakeFiles/testGTest.dir/main.cpp.obj	61b88790df0b2709
+1056	1711	658990661	testGTest.exe	4f0a61b6f9f402ce
+0	1084	658990730	CMakeFiles/testGTest.dir/main.cpp.obj	61b88790df0b2709
+1084	1856	658990730	testGTest.exe	4f0a61b6f9f402ce

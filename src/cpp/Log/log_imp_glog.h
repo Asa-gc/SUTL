@@ -17,11 +17,11 @@ public:
         }
         std::string log_file="./logs/logs.log";
         if(_log_arg.find("log_file")!=_log_arg.end()){
-            log_file=_log_arg.at("log_file");
+           // log_file=_log_arg.at("log_file");
         }
         std::string log_severitie="";
         if(_log_arg.find("log_severitie")!=_log_arg.end()){
-            log_severitie=_log_arg.at("log_file");
+            //log_severitie=_log_arg.at("log_file");
         }
         if(nullptr==s_glog){
             s_glog=new Log_Imp_Glog(log_dir,log_file,log_severitie);

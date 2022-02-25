@@ -6,8 +6,8 @@
 #include <map>
 #include <iostream>
 
-#ifndef DEFECT_LOG_TYPE
-#define DEFECT_LOG_TYPE "GLOG"
+#ifndef DEFAULT_LOG_TYPE
+#define DEFAULT_LOG_TYPE "GLOG"
 #endif
 
 namespace  _sutl{
@@ -91,7 +91,7 @@ protected:
     static Log_If *s_log;
 
     Log_Imp *m_logImp=nullptr;
-    std::string m_type=DEFECT_LOG_TYPE;
+    std::string m_type=DEFAULT_LOG_TYPE;
     std::map<std::string,std::string> m_arg;//todo 实装
 };
 
@@ -99,27 +99,14 @@ class Log_Trace
 {
 public:
     Log_Trace(const std::string &_func_name,
-              const std::string &_ext_inf=""){
-        m_func_name=_func_name;
-        std::string data="\t"+m_func_name;
-        if(!_ext_inf.empty()){
-            data+=(" \t[EXT_INF: "+_ext_inf);
-        }
-        data+=+" \t[START]";
-        if(nullptr==s_loger){
-            s_loger=Log_If::get_log(DEFECT_LOG_TYPE);
-        }
-        s_loger->LOG_(trace)(data);
-    }
-    ~Log_Trace(){
-        if(nullptr==s_loger){
-            s_loger=Log_If::get_log(DEFECT_LOG_TYPE);
-        }
-        s_loger->LOG_(trace)("\t"+m_func_name+" \t[END]");
-    }
+              const std::string &_ext_inf="");
+    ~Log_Trace();
 
     void log_worker(LOG_LEVEL _ll,const std::string&_data){
-        s_loger->log_worker(_ll,_data);
+        if(nullptr==s_loger){
+            s_loger=Log_If::get_log(DEFAULT_LOG_TYPE);
+        }
+        s_loger->log_worker(_ll," ["+m_func_name+"] "+_data);
     }
 private:
     Log_Trace(){}

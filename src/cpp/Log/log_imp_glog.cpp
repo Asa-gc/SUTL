@@ -52,7 +52,6 @@ Log_Imp_Glog::Log_Imp_Glog(const std::string &_log_dir, const std::string &_log_
     }else if("ERROR"==_log_severitie){
         google::SetLogDestination(google::ERROR,_log_file.c_str());
     }
-
 }
 Log_Imp_Glog::~Log_Imp_Glog()
 {

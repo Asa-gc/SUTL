@@ -10,6 +10,8 @@ Item{
     property alias horizontalAlignment: idTteValue.horizontalAlignment
     property alias verticalAlignment: idTteValue.verticalAlignment
     property var fontFamily:"微软雅黑"
+    property alias readOnly: idTteValue.readOnly
+    property var hasBored:true;
     signal sigEditingFinshed(string _text);
     width: 60
     height: 20
@@ -24,6 +26,10 @@ Item{
         }
         idItemRoot.inputMask=mask;
     }
+    onHasBoredChanged: {
+        idItemRoot.borderColor=hasBored?"darkslategray" : "#00000000"
+    }
+
     Rectangle {
         id: idRecBorder
         border.color: idItemRoot.borderColor

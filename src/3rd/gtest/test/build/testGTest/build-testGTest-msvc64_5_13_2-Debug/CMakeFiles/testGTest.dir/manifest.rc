@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "E:/project/myPrj/SUTL/src/3rd/gtest/test/build/testGTest/build-testGTest-msvc64_5_13_2-Debug/CMakeFiles/testGTest.dir/embed.manifest"

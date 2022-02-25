@@ -1,0 +1,55 @@
+﻿cmake_minimum_required(VERSION 3.5)
+#init copy list
+set(src_dir_list_copy)
+set(msg_list_copy)
+
+set(src_dir_list_copy_if_dif)
+set(msg_list_copy_if_dif)
+#end init copy list
+
+macro(COPY_DIRS_TO_EXE_DIR)
+    message("COPY_DIRS_TO_EXE_DIR ${ARGV0} ${${ARGV0}} ${ARGV1} ${${ARGV1}} ")
+    foreach(COPY_DIR COPY_MSG IN ZIP_LISTS ${ARGV0} ${ARGV1})
+        message("COPY_DIR ${COPY_DIR}")
+        add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+          COMMAND ${CMAKE_COMMAND} -E copy_directory
+              "${COPY_DIR}"
+          $<TARGET_FILE_DIR:${PROJECT_NAME}>
+          COMMENT "Copying MSG[${COPY_MSG}]"
+        )
+    endforeach()
+endmacro()
+
+macro(COPY_DIRS_TO_EXE_DIR_IF_DIF)
+    message("COPY_DIRS_TO_EXE_DIR_IF_DIF ${ARGV0} ${${ARGV0}} ${ARGV1} ${${ARGV1}} ")
+    foreach(COPY_DIR COPY_MSG IN ZIP_LISTS ${ARGV0} ${ARGV1})
+        message("COPY_DIR ${COPY_DIR}")
+        add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+          COMMAND ${CMAKE_COMMAND} -E copy_if_different
+              "${COPY_DIR}"
+          $<TARGET_FILE_DIR:${PROJECT_NAME}>
+          COMMENT "Copying MSG[${COPY_MSG}]"
+        )
+    endforeach()
+endmacro()
+
+macro(ADD_COPY_DIRS_LIST)# dir_list dir)
+    message("ADD_COPY_DIRS_LIST ${ARGV0} ${ARGV1}")
+    list(APPEND ${ARGV0} ${ARGV1})
+endmacro()
+
+macro(ADD_COPY_DIRS_LIST_WITH_MSG)# dir_list msg_list dir msg)
+    message("ADD_COPY_DIRS_LIST_WITH_MSG ${ARGV2} ${ARGV3}")
+    list(APPEND ${ARGV1} ${ARGV3})
+    ADD_COPY_DIRS_LIST(${ARGV0} ${ARGV2})
+endmacro()
+
+#macro(ADD_COPY_DIRS_LIST_WITH_DSTDIR_MSG)# src_dir_list dst_dir_list msg_list src_dir dst_dir msg)
+#    message("ADD_COPY_DIRS_LIST_WITH_DSTDIR_MSG ${ARGV3} ${ARGV4} ${ARGV5}")
+#    list(APPEND ${ARGV1} ${ARGV4})
+##    list(APPEND dst_dir_list dst_dir)
+##    set(dst_dir_list "${dst_dir_list}" "${dst_dir}")
+#    ADD_COPY_DIRS_LIST(src_dir_list msg_list src_dir msg)
+#endmacro()
+
+

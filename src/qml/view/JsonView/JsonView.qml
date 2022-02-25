@@ -4,13 +4,17 @@ import QtQuick.Layouts 1.12
 import "../../func/MyJson/MyJson.js"as MyJson
 
 Rectangle {
+//    border.color: "#000000"
+//    border.width: 2
     id:idRecRoot;
-    //border.color: "#000000"
+    color: "#00000000"
     property Component jsonNodeComponent:null;
     property int pointSize:10
+    property bool readOnly:false
     property string curJsonStr;
 
     signal jsonChange();
+    signal jsonChangeWithAbsKey(string _absoluteKey,string _value,int _type);
 
     onPointSizeChanged: {
         //setJsonStr(curJsonStr);
@@ -37,7 +41,7 @@ Rectangle {
         try {
             jsonObj = JSON.parse(_jsonStr);
         }catch(e){
-            console.log(e.name, e.message);
+            console.log("jsonview",e.name, e.message,_jsonStr);
             return;
         }
         curJsonStr=_jsonStr;
@@ -53,13 +57,70 @@ Rectangle {
         }
         idRecJsonView.rootNode=idRecRoot.createObjectNode(idRecJsonView,"",jsonObj);
       }
+    function setJson(_json){
+        curJsonStr=JSON.stringify(_json);
+        if(null===jsonNodeComponent){
+            jsonNodeComponent=Qt.createComponent("./JsonNode.qml");
+        }
+        if(idRecRoot.jsonNodeComponent.status!==Component.Ready){
+            console.log("idRecRoot.jsonNodeComponent not ready" );
+            return;
+        }
+        if(idRecJsonView.rootNode){
+            idRecJsonView.rootNode.destroyTheNode();
+        }
+        idRecJsonView.rootNode=idRecRoot.createObjectNode(idRecJsonView,"",_json);
+      }
 
+    //add 20211119 GC
+    function setJsonWithCareKey(_json,_keyList /*Object*/ /*Array*/){
+        var dstJson={};
+        var dstJsonStr="";
+        if(MyJson.typeObj(_keyList==="array")){
+            for(let i in _keyList){
+                let key=_keyList[i.toString()]
+                let value=_json[key];
+                if(value===undefined){
+                    console.log(key, " not finded in Jsonstr!");
+                    continue;
+                }
+                dstJson[key]=value;
+            }
+            dstJsonStr=JSON.stringify(dstJson);
+            console.log("dstJsonStr ",dstJsonStr);
+        }else{
+           dstJsonStr=_jsonStr;
+           console.log("_keyList is not array set all _jsonStr to view!")
+        }
+        idRecRoot.setJsonStr(dstJsonStr);
+      }
+    function setJsonStrWithCareKey(_jsonStr,_keyList){
+        var srcJson;
+        try {
+            srcJson = JSON.parse(_jsonStr);
+        }catch(e){
+            console.log("jsonview",e.name, e.message);
+            return;
+        }
+        setJsonWithCareKey(srcJson,_keyList)
+      }
+
+    function createItem(_parentItem){
+        var p=_parentItem.idCLt===undefined?_parentItem:_parentItem.idCLt;
+        var item=jsonNodeComponent.createObject(p,{"pointSize":pointSize,
+                                                    "readOnly":readOnly});
+        item.sigValueChange.connect(idRecRoot.jsonChange);
+        item.sigValueChangeWithAbsKey.connect(_parentItem.childNodeValueChanged);
+        return item;
+    }
+    /*back up 20211125
     function createItem(_parentItem){
         var p=_parentItem.idCLt===undefined?_parentItem:_parentItem.idCLt;
         var item=jsonNodeComponent.createObject(p,{"pointSize":pointSize});
         item.sigValueChange.connect(jsonChange);
         return item;
     }
+    */
 
     function createObjectNode(_rootItem,_key,_json){
         var curNode=createItem(_rootItem);
@@ -145,6 +206,14 @@ Rectangle {
         //console.log("createLeafNode",_key,_value);
         return curNode;
     }
+    function refresh() {
+        setJsonStr(getJsonStr())
+    }
+    onVisibleChanged: {
+        if (visible === true) {
+            refresh()
+        }
+    }
 
     ScrollView{
         id: idSvwJson
@@ -153,14 +222,22 @@ Rectangle {
         contentWidth: idRecJsonView.width;
         contentHeight: idRecJsonView.height
         anchors.margins: 10
+
         //            ScrollBar.horizontal.policy: ScrollBar.AlwaysOn
         //                  ScrollBar.vertical.policy: ScrollBar.AlwaysOn
         Rectangle{
-            border.color: "#000000"
+            //border.color: "#000000"
+            color: "#00000000"
             id: idRecJsonView
             implicitWidth: childrenRect.width
             implicitHeight: childrenRect.height
             property Item rootNode: null
+
+            function childNodeValueChanged(_key,_value,_type){
+                console.log("childNodeValueChanged Final",_key,_value)
+                idRecRoot.jsonChangeWithAbsKey(_key,_value,_type);
+            }
+
         }
     }
 }
